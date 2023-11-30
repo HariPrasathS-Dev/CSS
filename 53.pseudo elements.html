@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Web layout using Pseudo Elements</title>
+    <style>
+        div::first-line{
+            color: blueviolet;
+        }
+        p::first-letter{
+            background-color: red;
+            color: rgb(10, 10, 10);
+            font-size: 25pt;
+        }
+        h3::first-letter{
+            color: darkgreen;
+            font-size:25pt;
+        }
+        h3::first-line{
+            color: rgb(12, 223, 44);
+        }
+        h1::before{
+            content:"*";
+        }
+        h2::after{
+            content:"-THANKYOU"
+        }
+        ::marker{
+            color:rgb(58, 14, 171);
+            font-size: 20pt;
+        }
+        h4::selection{
+            color: red;
+            background-color: lime;
+        }
+    </style>
+</head>
+<body>
+    <div>
+     Hari Prasath.S This consists of the name of the element (in this case, p), wrapped in opening and closing angle brackets. This states where the element begins or starts to take effect — in this case where the paragraph begins.The closing tag: This is the same as the opening tag, except that it includes a forward slash before the element name. This states where the element ends — in this case where the paragraph ends. Failing to add a closing tag is one of the standard beginner errors and can lead to strange results.
+    </div>
+    <p>HTML (HyperText Markup Language) is the code that is used to structure a web page and its content. For example, content could be structured within a set of paragraphs, a list of bulleted points, or using images and data tables. As the title suggests, this article will give you a basic understanding of HTML and its functions.</p>
+    
+    <h3>The content: This is the content of the element, which in this case, is just text.</h3><h1>The element: The opening tag, the closing tag, and the content together comprise the element.</h1>
+    <h2>HYPERTEXT MOCKUP LANGUAGE</h2>
+    <div><h5>WEB LAYOUT USING PSEUDO CLASSES</h5>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ol></div>
+    <h4>THANKYOU</h4>
+</body>
+</html
